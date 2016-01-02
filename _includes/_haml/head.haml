@@ -1,1 +1,11 @@
-%h1 hello world
+%head
+  %meta{charset: "utf-8"}/
+  %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+  %meta{content: "Eumir Gaspar | Ruby Developer", name: "description"}/
+  %meta{property: 'og:title', content: 'Eumir Gaspar'}
+  %title Eumir Gaspar
+  / [if gt IE 8]><!
+  %link{href: "css/main.css", rel: "stylesheet"}/
+  / <![endif]
+  %script{src: "http://code.jquery.com/jquery-1.11.0.min.js"}
+
