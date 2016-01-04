@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Carme)
+
+h1, h2, h3, h4, h5, h6, label
+  color: $header-color
+  font-family: 'carme', sans-serif
+
+h1
+  font:
+    size: 4rem
+    weight: normal
+
+h2
+  font:
+    size: 3rem
+    weight: bold
+
+strong
+  color: $orange
+  font-weight: bold
+
+::selection
+  color: $body-background-color
+  background: $cyan
+
+a
+  text-decoration: none
+  color: $blue
+  border-bottom: 1px dotted $blue
+
+  &:hover
+    @include transition(all 0.4s ease-in-out)
+    color: $green
