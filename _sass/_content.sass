@@ -1,8 +1,27 @@
+.my-name-is
+  margin: 1rem
+  font-size: 2.4rem
+
+  @include smartphone-landscape
+    font-size: 3rem
+
 .intro
-  @include span-columns(5)
-  border:
-    right: 1px solid $base1
+  @include span-columns(12)
+  padding: 1rem
+
+  @include smartphone-landscape
+    @include span-columns(5)
+    border:
+      right: 1px solid $base1
 
   p
-    padding: 1em
+    padding-bottom: 1em
       left: 0
+
+.extras
+  padding: 1rem
+
+  @include smartphone-landscape
+    @include span-columns(7)
+    padding: 0
+
