@@ -43,7 +43,7 @@ config[:haml] = {ugly: true, format: :html5}
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
-  deploy.build_before = true
+  deploy.build_before = false
   deploy.host = 'meetmeinouter.space'
   deploy.path = '/'
   deploy.branch = 'master'
