@@ -49,3 +49,7 @@ activate :deploy do |deploy|
   deploy.branch = 'master'
   deploy.commit_message = "Deployed at #{Time.now.getlocal} by #{Middleman::Deploy::PACKAGE} #{Middleman::Deploy::VERSION}"
 end
+
+activate :blog do |blog|
+
+end
