@@ -8,6 +8,7 @@
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page "/coffee/*", layout: 'article'
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -50,6 +51,9 @@ activate :deploy do |deploy|
   deploy.commit_message = "Deployed at #{Time.now.getlocal} by #{Middleman::Deploy::PACKAGE} #{Middleman::Deploy::VERSION}"
 end
 
+activate :directory_indexes
 activate :blog do |blog|
-
+  blog.layout = 'article'
+  blog.sources = "{category}/{title}.md.markdown"
+  blog.permalink = "{category}/{title}/"
 end
