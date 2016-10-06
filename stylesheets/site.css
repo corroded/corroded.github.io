@@ -439,37 +439,37 @@ p {
   .social-links a {
     border-bottom: 0; }
 
-.sites, .tools {
-  list-style-type: none;
-  padding-left: 0; }
-
-.my-name-is {
-  margin: 1rem;
-  font-size: 2.4rem; }
-  @media only screen and (min-width: 321px) {
-    .my-name-is {
-      font-size: 3rem; } }
-
-.intro {
+.intro-blurb {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   padding: 1rem; }
-  .intro:last-child {
+  .intro-blurb:last-child {
     margin-right: 0; }
   @media only screen and (min-width: 321px) {
-    .intro {
+    .intro-blurb {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 40.29137%;
       border-right: 1px solid #93a1a1; }
-      .intro:last-child {
+      .intro-blurb:last-child {
         margin-right: 0; } }
-  .intro p {
+  .intro-blurb > p {
     padding-bottom: 1em;
       padding-bottom-left: 0; }
+
+.sites, .tools {
+  list-style-type: none;
+  padding-left: 0; }
+
+.my-name {
+  margin: 1rem;
+  font-size: 2.4rem; }
+  @media only screen and (min-width: 321px) {
+    .my-name {
+      font-size: 3rem; } }
 
 .extras {
   padding: 1rem; }
