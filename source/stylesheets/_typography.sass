@@ -1,19 +1,38 @@
-h1, h2, h3, h4, h5, h6, label
+html
+  font-size: 16px
+
+body
+  background-color: white
+  font-family: 'Carme', serif
+  line-height: 1.45
+  color: #333
+
+p
+  margin-bottom: 1.3em
+
+h1, h2, h3, h4
+  margin: 1.414em 0 0.5em
+  font-weight: inherit
+  line-height: 1.2
   color: $header-color
-  font-family: 'carme', sans-serif
 
 h1
-  font:
-    size: 4rem
-    weight: normal
+  margin-top: 0
+  font-size: 2.074em
 
 h2
   font:
-    size: 3rem
+    size: 1.728em
     weight: bold
 
+h3
+  font-size: 1.44em
+
 h4
-  margin: 1em 0
+  font-size: 1.2em
+
+small
+  font-size: 0.833em
 
 strong
   color: $orange
@@ -29,5 +48,5 @@ a
   border-bottom: 1px dotted $blue
 
   &:hover
-    @include transition(all 0.4s ease-in-out)
+    +transition(all 0.4s ease-in-out)
     color: $green

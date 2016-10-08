@@ -8,7 +8,7 @@ html
 
 body
   height: 100vh
-  line-height: 1.7em
+  line-height: 1.7
   font-size: $base-font-size
   color: $base02
   background: $body-background-color
@@ -21,12 +21,8 @@ p
   margin: 0
 
 .main-container
-  @include outer-container
+  +outer-container
   height: auto
   padding: 0
-    top: 1em
-    bottom: 3em
-
-@import 'components/social_links'
-@import 'components/intro_blurb'
-@import 'components/projects'
+    top: 1rem
+    bottom: 3rem
