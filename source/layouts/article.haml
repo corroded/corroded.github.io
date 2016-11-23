@@ -1,3 +1,5 @@
 = wrap_layout :layout do
   %article.blog-post
+    %h3.header= current_page.data.title
+    %small.date= current_page.data.date
     = yield
